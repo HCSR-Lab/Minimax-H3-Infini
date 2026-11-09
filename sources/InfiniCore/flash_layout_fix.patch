@@ -1,0 +1,53 @@
+--- a/xmake/hygon.lua
++++ b/xmake/hygon.lua
+@@ -301,12 +301,16 @@
+             local flash_dir_hygon = path.directory(flash_so_hygon)
+             local flash_name_hygon = path.filename(flash_so_hygon)
+             local flash_lib_dir_hygon = path.join(FLASH_ATTN_ROOT, "flash_attn", "lib")
+-            target:add(
+-                "shflags",
+-                "-Wl,--no-as-needed -L" .. flash_lib_dir_hygon .. " -l:libflash_attention.so -Wl,-rpath," .. flash_lib_dir_hygon,
+-                "-L" .. flash_dir_hygon .. " -l:" .. flash_name_hygon .. " -Wl,-rpath," .. flash_dir_hygon,
+-                {force = true}
+-            )
++            -- Vendor cp311 wheels bundle kernels in the Python extension.
++            -- Older split-library wheels also need libflash_attention.so.
++            if os.isfile(path.join(flash_lib_dir_hygon, "libflash_attention.so")) then
++                target:add("shflags",
++                    "-Wl,--no-as-needed -L" .. flash_lib_dir_hygon .. " -l:libflash_attention.so -Wl,-rpath," .. flash_lib_dir_hygon,
++                    {force = true})
++            end
++            target:add("shflags",
++                "-Wl,--no-as-needed -L" .. flash_dir_hygon .. " -l:" .. flash_name_hygon .. " -Wl,-rpath," .. flash_dir_hygon,
++                {force = true})
+         end)
+     end
+ target_end()
+--- a/src/infinicore/adaptor/flash_attn/hygon/flash_attn_hygon.cc
++++ b/src/infinicore/adaptor/flash_attn/hygon/flash_attn_hygon.cc
+@@ -5,6 +5,7 @@
+ #include <ATen/ATen.h>
+ #include <c10/util/Optional.h>
+ #include <dlfcn.h>
++#include <cstdlib>
+ #include <optional>
+ #include <stdexcept>
+ #include <string>
+@@ -73,6 +74,17 @@
+ void *resolve_flash_extension_symbol(const char *name) {
+     static std::string last_error;
+     static void *handle = [&]() -> void * {
++        // Match the actual interpreter ABI; an explicit path takes priority.
++        const char *explicit_path = std::getenv("FLASH_ATTN_2_CUDA_SO");
++        if (explicit_path && *explicit_path) {
++            dlerror();
++            if (void *h = dlopen(explicit_path, RTLD_NOW | RTLD_GLOBAL)) {
++                return h;
++            }
++            const char *err = dlerror();
++            throw std::runtime_error(std::string("flash_attn explicit dlopen failed: ")
++                                     + explicit_path + "; " + (err ? err : "unknown error"));
++        }
+         const char *candidates[] = {
+             "flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so",
+             "/usr/local/lib/python3.10/dist-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so",

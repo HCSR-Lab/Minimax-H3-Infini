@@ -1,0 +1,24 @@
+{
+  "scope": "CPU comparison of saved historical videos; no generation",
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "scorer_sha256": "e143c28e4b3acb885662e0aa238aa00ca17cbcc82077f465f2ce57d0f1225590",
+  "packages": {
+    "numpy": "2.2.6",
+    "scikit-image": "0.25.2",
+    "Pillow": "11.3.0"
+  },
+  "av": "14.0.1",
+  "inputs_sha256": {
+    "pytorch.mp4": "6749a014008506e613c3845bc7f12e57e57e6a8ece574cd5bb9d423d04a6d1d7",
+    "h3-bsa.mp4": "c0ee1001333924e5791adc76d03b6e8dc9ac7f7eaf1c3aa591fffab25eda0d28",
+    "legacy.mp4": "9c331f48d43cab81319f4bc0e48971e95d877ef7db62a8595e352e4dd195f559"
+  },
+  "commands": {
+    "pytorch": "PYTHONPATH=/tmp/h3-bsa-compare-deps python3 -u sources/InfiniLM/examples/minimax_h3_compare.py --model-path . --tasks fl2va --reference-fl2va-video private/comparison-inputs/pytorch.mp4 --infinilm-fl2va-video private/comparison-inputs/h3-bsa.mp4 --output-dir private/comparison-runs/pytorch",
+    "legacy": "PYTHONPATH=/tmp/h3-bsa-compare-deps python3 -u sources/InfiniLM/examples/minimax_h3_compare.py --model-path . --tasks fl2va --reference-fl2va-video private/comparison-inputs/legacy.mp4 --infinilm-fl2va-video private/comparison-inputs/h3-bsa.mp4 --output-dir private/comparison-runs/legacy"
+  },
+  "exit_codes": {
+    "pytorch": 0,
+    "legacy": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "source_log": "sync_v2.log",
+  "source_log_sha256": "e0cb06bd9990964e0be0d8e8db9aa900d8df698ccf8686de8ee861fa01298a43",
+  "scope": "Historical single run, not a new run or a multi-run performance estimate",
+  "seconds": {
+    "model.pipeline_create": 2.555,
+    "model.condition_encoder_create_and_load": 26.263,
+    "model.transformer_create_and_load": 22.391,
+    "model.remaining_components_create_and_load": 8.144,
+    "compute.condition_encoder": 8.871,
+    "compute.h3_transformer": 15.804,
+    "output.video_vae_decode": 6.988,
+    "output.audio_vae_decode": 1.474,
+    "generation.pipeline_total": 36.489,
+    "output.media_encode": 1.32,
+    "total.end_to_end": 97.855
+  },
+  "model_load_seconds": 59.353,
+  "audio_video_decode_seconds": 8.462,
+  "timing_excludes": [
+    "compilation",
+    "dependency download",
+    "job startup"
+  ],
+  "comparison_speedup": null
+}

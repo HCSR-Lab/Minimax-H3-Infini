@@ -1,0 +1,14 @@
+{
+  "task": "fl2va",
+  "image": "Golde33443.jpg",
+  "image_sha256": "1e71abf29876f248088a11211a350ed3d26a0c68aa34f6e45738771eb2d45a22",
+  "prompt": "A dog falls asleep",
+  "seed": 42,
+  "steps": 10,
+  "width": 576,
+  "height": 384,
+  "num_frames": 124,
+  "fps": 24,
+  "scope": "Project comparison case from the POD guide; not a statement of the final contest configuration.",
+  "input_distribution": "Supply the official guide image externally; redistribution permission is not yet confirmed."
+}

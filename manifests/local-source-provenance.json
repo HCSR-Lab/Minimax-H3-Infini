@@ -1,0 +1,12 @@
+{
+  "diffusers": {
+    "source": "Existing local offline source bundle",
+    "upstream": "https://github.com/huggingface/diffusers.git",
+    "recorded_commit": "fe15005a333d1270b490e4885a6ea13b66b1092a",
+    "destination": "sources/diffusers",
+    "files_verified_against_local_bundle": 3768,
+    "sorted_path_and_file_sha256_digest": "da2c4fff927614ac66b3840c87b180a992c782f6754ed5827400222d746b8701",
+    "scope": "Full upstream source copied from the local fixed-version bundle; not the server-installed Python snapshot",
+    "delivery_cleanup": "Removed generated build/ and src/diffusers.egg-info; upstream source content retained."
+  }
+}

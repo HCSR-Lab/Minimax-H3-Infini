@@ -1,0 +1,37 @@
+{
+  "case": {
+    "image": "Golde33443.jpg",
+    "image_sha256": "1e71abf29876f248088a11211a350ed3d26a0c68aa34f6e45738771eb2d45a22",
+    "prompt": "A dog falls asleep",
+    "seed": 42,
+    "steps": 10,
+    "actual_denoiser_calls": 9,
+    "width": 576,
+    "height": 384,
+    "frames": 124,
+    "fps": 24,
+    "audio": true
+  },
+  "source": "Existing POD runs, not executed by this repository revision",
+  "video_ssim_percent": {
+    "v2_vs_legacy": 95.15381527832348,
+    "v2_vs_pytorch": 93.0889343668729,
+    "pytorch_vs_legacy": 94.23103184276818
+  },
+  "videos": {
+    "b_infini_v2_sync_10step.mp4": {
+      "bytes": 785988,
+      "sha256": "c0ee1001333924e5791adc76d03b6e8dc9ac7f7eaf1c3aa591fffab25eda0d28"
+    },
+    "b_legacy_10step.mp4": {
+      "bytes": 781565,
+      "sha256": "9c331f48d43cab81319f4bc0e48971e95d877ef7db62a8595e352e4dd195f559"
+    },
+    "b_pytorch_10step.mp4": {
+      "bytes": 780867,
+      "sha256": "6749a014008506e613c3845bc7f12e57e57e6a8ece574cd5bb9d423d04a6d1d7"
+    }
+  },
+  "scorer_source_sha256": "e143c28e4b3acb885662e0aa238aa00ca17cbcc82077f465f2ce57d0f1225590",
+  "acceptance": "Legacy video threshold met in historical run; audio threshold unmet. Target-hardware reproduction of this repository remains pending."
+}

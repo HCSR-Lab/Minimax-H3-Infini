@@ -1,0 +1,10 @@
+{
+  "xmake/hygon.lua": {
+    "before": "e3c4d43bea897444e5dbf568e8adee2357144de5e5cc5fcd6b76016467af74fe",
+    "after": "25ba75fbd8c3d7d2c6bb9596dbc42db221771137914a0ecf556b93af1369fecf"
+  },
+  "src/infinicore/adaptor/flash_attn/hygon/flash_attn_hygon.cc": {
+    "before": "e5db47e1ad11c72e5691a66eb247f006af73fa87268143851d43efead24d0d30",
+    "after": "64748b6f8b12cd7cb4a02e171983e0c57ba75ad8bf7bf34f70e380f393a442c2"
+  }
+}

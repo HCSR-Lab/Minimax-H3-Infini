@@ -1,0 +1,18 @@
+{
+  "InfiniLM": {
+    "url": "https://github.com/InfiniTensor/InfiniLM.git",
+    "commit": "65deb91f840ebaef752d028fad2f3217ce0950f4"
+  },
+  "InfiniCore": {
+    "url": "https://github.com/InfiniTensor/InfiniCore.git",
+    "commit": "f32e2fbb2a9b2ca912b5711f4f3836c403196a74"
+  },
+  "ninetoothed": {
+    "url": "https://github.com/InfiniTensor/ninetoothed.git",
+    "commit": "bf8d7c42f86cf5feafe4a3ad443f1df151016886"
+  },
+  "diffusers": {
+    "url": "https://github.com/huggingface/diffusers.git",
+    "commit": "fe15005a333d1270b490e4885a6ea13b66b1092a"
+  }
+}

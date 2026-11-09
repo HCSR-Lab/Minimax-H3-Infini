@@ -1,0 +1,93 @@
+7ba68cb292ebf4f58939477409427557000514b6bd3bfadc283bd60e914d7027  /public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/environments/h3_clean/diagnose_sync_bridge.py
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+FLASH_WHEEL flash_attn-2.6.1+das.opt1.dtk2604.torch290-cp311-cp311-manylinux_2_28_x86_64.whl 8546e46bcbfcd346757c67a0ff180ace2a49716d9724d52ee870d04b4c3b41d1
+FLASH_LIBRARIES ['/dev/shm/infinifabric-preparation/shell-fd8509dc3f924e75af70fda4427f0f5d/h3-flash-BZ8XyE/venv/lib/python3.11/site-packages/flash_attn_2_cuda.cpython-311-x86_64-linux-gnu.so']
+FA_SO_PATH /dev/shm/infinifabric-preparation/shell-fd8509dc3f924e75af70fda4427f0f5d/h3-flash-BZ8XyE/venv/lib/python3.11/site-packages/flash_attn_2_cuda.cpython-311-x86_64-linux-gnu.so
+CANDIDATE_SYNC_BRIDGE_ENABLED
+Modular Diffusers is currently an experimental feature under active development. The API is subject to breaking changes in future releases.
+[model] Loading modular components from: /public/home/aclsylqidf/shared/MiniMax-H3/diffusers
+[model] Loading fl2va weights from:       /public/home/aclsylqidf/shared/MiniMax-H3/diffusers
+[model] Backend: InfiniLM
+[model] InfiniLM TP devices: [0, 1, 2, 3, 4, 5, 6, 7]
+[2026-11-07 05:45:41.549] [info] [:] Intra-node TP communicator established: node_rank=0, local_ranks=8
+ load weights ......
+Found index file: /public/home/aclsylqidf/shared/MiniMax-H3/diffusers/text_encoder/model.safetensors.index.json. Loading shards by index.
+Processing files:   0%|          | 0/14 [00:00<?, ?it/s]                                                        Processing: model-00007-of-00014.safetensors
+Processing files:   0%|          | 0/14 [00:00<?, ?it/s]Processing files:   7%|▋         | 1/14 [00:00<00:10,  1.23it/s]                                                                Processing: model-00006-of-00014.safetensors
+Processing files:   7%|▋         | 1/14 [00:00<00:10,  1.23it/s]Processing files:  14%|█▍        | 2/14 [00:01<00:10,  1.14it/s]                                                                Processing: model-00002-of-00014.safetensors
+Processing files:  14%|█▍        | 2/14 [00:01<00:10,  1.14it/s]Processing files:  21%|██▏       | 3/14 [00:02<00:10,  1.02it/s]                                                                Processing: model-00004-of-00014.safetensors
+Processing files:  21%|██▏       | 3/14 [00:02<00:10,  1.02it/s]Processing files:  29%|██▊       | 4/14 [00:04<00:10,  1.08s/it]                                                                Processing: model-00009-of-00014.safetensors
+Processing files:  29%|██▊       | 4/14 [00:04<00:10,  1.08s/it]Processing files:  36%|███▌      | 5/14 [00:05<00:10,  1.18s/it]                                                                Processing: model-00008-of-00014.safetensors
+Processing files:  36%|███▌      | 5/14 [00:05<00:10,  1.18s/it]Processing files:  43%|████▎     | 6/14 [00:06<00:08,  1.12s/it]                                                                Processing: model-00013-of-00014.safetensors
+Processing files:  43%|████▎     | 6/14 [00:06<00:08,  1.12s/it]Processing files:  50%|█████     | 7/14 [00:07<00:07,  1.05s/it]                                                                Processing: model-00010-of-00014.safetensors
+Processing files:  50%|█████     | 7/14 [00:07<00:07,  1.05s/it]Processing files:  57%|█████▋    | 8/14 [00:08<00:06,  1.08s/it]                                                                Processing: model-00012-of-00014.safetensors
+Processing files:  57%|█████▋    | 8/14 [00:08<00:06,  1.08s/it]Processing files:  64%|██████▍   | 9/14 [00:08<00:03,  1.27it/s]                                                                Processing: model-00005-of-00014.safetensors
+Processing files:  64%|██████▍   | 9/14 [00:08<00:03,  1.27it/s]Processing files:  71%|███████▏  | 10/14 [00:09<00:03,  1.22it/s]                                                                 Processing: model-00003-of-00014.safetensors
+Processing files:  71%|███████▏  | 10/14 [00:09<00:03,  1.22it/s]Processing files:  79%|███████▊  | 11/14 [00:10<00:02,  1.20it/s]                                                                 Processing: model-00001-of-00014.safetensors
+Processing files:  79%|███████▊  | 11/14 [00:10<00:02,  1.20it/s]Processing files:  86%|████████▌ | 12/14 [00:12<00:02,  1.26s/it]                                                                 Processing: model-00014-of-00014.safetensors
+Processing files:  86%|████████▌ | 12/14 [00:12<00:02,  1.26s/it]Processing files:  93%|█████████▎| 13/14 [00:14<00:01,  1.35s/it]                                                                 Processing: model-00011-of-00014.safetensors
+Processing files:  93%|█████████▎| 13/14 [00:14<00:01,  1.35s/it]Processing files: 100%|██████████| 14/14 [00:14<00:00,  1.07s/it]Processing files: 100%|██████████| 14/14 [00:14<00:00,  1.04s/it]
+ load weights over! 14769.479036331177 ms 
+
+[2026-11-07 05:46:05.565] [info] [:] Intra-node TP communicator established: node_rank=0, local_ranks=8
+ load weights ......
+No index file found. Scanning all safetensors files...
+Processing files:   0%|          | 0/14 [00:00<?, ?it/s]                                                        Processing: diffusion_pytorch_model-00001-of-00014.safetensors
+Processing files:   0%|          | 0/14 [00:00<?, ?it/s]Processing files:   7%|▋         | 1/14 [00:01<00:18,  1.41s/it]                                                                Processing: diffusion_pytorch_model-00002-of-00014.safetensors
+Processing files:   7%|▋         | 1/14 [00:01<00:18,  1.41s/it]Processing files:  14%|█▍        | 2/14 [00:02<00:13,  1.13s/it]                                                                Processing: diffusion_pytorch_model-00003-of-00014.safetensors
+Processing files:  14%|█▍        | 2/14 [00:02<00:13,  1.13s/it]Processing files:  21%|██▏       | 3/14 [00:03<00:13,  1.26s/it]                                                                Processing: diffusion_pytorch_model-00004-of-00014.safetensors
+Processing files:  21%|██▏       | 3/14 [00:03<00:13,  1.26s/it]Processing files:  29%|██▊       | 4/14 [00:04<00:12,  1.23s/it]                                                                Processing: diffusion_pytorch_model-00005-of-00014.safetensors
+Processing files:  29%|██▊       | 4/14 [00:04<00:12,  1.23s/it]Processing files:  36%|███▌      | 5/14 [00:05<00:09,  1.10s/it]                                                                Processing: diffusion_pytorch_model-00006-of-00014.safetensors
+Processing files:  36%|███▌      | 5/14 [00:05<00:09,  1.10s/it]Processing files:  43%|████▎     | 6/14 [00:07<00:10,  1.28s/it]                                                                Processing: diffusion_pytorch_model-00007-of-00014.safetensors
+Processing files:  43%|████▎     | 6/14 [00:07<00:10,  1.28s/it]Processing files:  50%|█████     | 7/14 [00:08<00:09,  1.30s/it]                                                                Processing: diffusion_pytorch_model-00008-of-00014.safetensors
+Processing files:  50%|█████     | 7/14 [00:08<00:09,  1.30s/it]Processing files:  57%|█████▋    | 8/14 [00:10<00:08,  1.34s/it]                                                                Processing: diffusion_pytorch_model-00009-of-00014.safetensors
+Processing files:  57%|█████▋    | 8/14 [00:10<00:08,  1.34s/it]Processing files:  64%|██████▍   | 9/14 [00:11<00:06,  1.35s/it]                                                                Processing: diffusion_pytorch_model-00010-of-00014.safetensors
+Processing files:  64%|██████▍   | 9/14 [00:11<00:06,  1.35s/it]Processing files:  71%|███████▏  | 10/14 [00:12<00:05,  1.32s/it]                                                                 Processing: diffusion_pytorch_model-00011-of-00014.safetensors
+Processing files:  71%|███████▏  | 10/14 [00:12<00:05,  1.32s/it]Processing files:  79%|███████▊  | 11/14 [00:14<00:04,  1.34s/it]                                                                 Processing: diffusion_pytorch_model-00012-of-00014.safetensors
+Processing files:  79%|███████▊  | 11/14 [00:14<00:04,  1.34s/it]Processing files:  86%|████████▌ | 12/14 [00:15<00:02,  1.36s/it]                                                                 Processing: diffusion_pytorch_model-00013-of-00014.safetensors
+Processing files:  86%|████████▌ | 12/14 [00:15<00:02,  1.36s/it]Processing files:  93%|█████████▎| 13/14 [00:17<00:01,  1.44s/it]                                                                 Processing: diffusion_pytorch_model-00014-of-00014.safetensors
+Processing files:  93%|█████████▎| 13/14 [00:17<00:01,  1.44s/it]Processing files: 100%|██████████| 14/14 [00:18<00:00,  1.29s/it]Processing files: 100%|██████████| 14/14 [00:18<00:00,  1.30s/it]
+ load weights over! 18765.745162963867 ms 
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  7.67it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  4.70it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.07it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  3.49it/s]
+/public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/baselines_20261106/infini/venv/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+[model] Diffusers execution device: cuda:0
+There are modules in AutoencoderKLMiniMaxH3 that should be kept in float32: ['encoder', 'decoder', 'quant_conv', 'post_quant_conv']. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+There are modules in AutoencoderKLMiniMaxH3Audio that should be kept in float32: ['encoder', 'decoder', 'pre_block', 'dec_in_proj', 'mean_proj', 'logs_proj']. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+[generate] Running MiniMax-H3 FL2VA
+  text:            A dog falls asleep
+  first frame:     True
+  last frame:      False
+  frames:          124
+  steps:           10
+  backend:         InfiniLM
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:04<00:33,  4.23s/it] 22%|██▏       | 2/9 [00:05<00:18,  2.61s/it] 33%|███▎      | 3/9 [00:07<00:12,  2.09s/it] 44%|████▍     | 4/9 [00:08<00:09,  1.84s/it] 56%|█████▌    | 5/9 [00:10<00:06,  1.71s/it] 67%|██████▋   | 6/9 [00:11<00:04,  1.62s/it] 78%|███████▊  | 7/9 [00:13<00:03,  1.57s/it] 89%|████████▉ | 8/9 [00:14<00:01,  1.54s/it]100%|██████████| 9/9 [00:15<00:00,  1.52s/it]100%|██████████| 9/9 [00:15<00:00,  1.77s/it]
+/public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/baselines_20261106/infini/venv/lib/python3.11/site-packages/torch/nn/functional.py:3095: UserWarning: Mismatch dtype between input and weight: input dtype = float, weight dtype = c10::BFloat16, Cannot dispatch to fused implementation. (Triggered internally at /home/pytorch/aten/src/ATen/native/layer_norm.cpp:344.)
+  return torch.rms_norm(input, normalized_shape, weight, eps)
+/public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/baselines_20261106/infini/venv/lib/python3.11/site-packages/diffusers/models/attention_dispatch.py:3552: UserWarning: sdpa adopt the new interface of flash-attn (Triggered internally at /home/pytorch/aten/src/ATen/native/transformers/hip/cutlassfa_adapter.h:145.)
+  out = torch.nn.functional.scaled_dot_product_attention(
+Encoding video chunks:   0%|          | 0/1 [00:00<?, ?it/s]Encoding video chunks: 100%|██████████| 1/1 [00:00<00:00,  1.77it/s]Encoding video chunks: 100%|██████████| 1/1 [00:00<00:00,  1.77it/s]
+
+[timing] MiniMax-H3 profile
+  model.pipeline_create                      2.555 s
+  model.condition_encoder_create_and_load    26.263 s
+  model.transformer_create_and_load         22.391 s
+  model.remaining_components_create_and_load     8.144 s
+  input.files_and_references                 0.691 s
+  input.arguments                            0.000 s
+  compute.condition_encoder                  8.871 s
+  input.video_vae_encode                     1.073 s
+  input.audio_vae_encode                     0.000 s (0 calls)
+  compute.h3_transformer                    15.804 s (9 calls, 1.756 s/call)
+  output.video_vae_decode                    6.988 s
+  output.audio_vae_decode                    1.474 s
+  generation.pipeline_total                 36.489 s
+  output.media_encode                        1.320 s
+  total.end_to_end                          97.855 s
+  pipeline.other_preprocess_scheduler        2.278 s
+[done] Saved to: /public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/baselines_20261106/results/alignment_pod_10step/b_infini_v2_sync_10step.mp4
+SYNC_BRIDGE_COUNTS {"cuda:0": 126}
+TORCH_STREAM_PENDING_AT_BRIDGE {"cuda:0": 20}
+c0ee1001333924e5791adc76d03b6e8dc9ac7f7eaf1c3aa591fffab25eda0d28  /public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/baselines_20261106/results/alignment_pod_10step/b_infini_v2_sync_10step.mp4

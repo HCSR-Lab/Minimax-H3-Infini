@@ -1,0 +1,10 @@
+{
+  "local_only": [
+    "docs/",
+    "root Word report and lock files"
+  ],
+  "upstream_file_excluded_from_publication": {
+    "path": "sources/diffusers/tests/pipelines/flux2/test_pipeline_flux2.py",
+    "reason": "GitHub push protection falsely flags the transformers Mistral class import as an API key; unrelated to MiniMax-H3. Original local file preserved."
+  }
+}

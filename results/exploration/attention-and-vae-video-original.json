@@ -1,0 +1,296 @@
+{
+  "source": "/public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/baselines_20261106/infini/src/InfiniLM/examples/minimax_h3_compare.py",
+  "source_sha256": "e143c28e4b3acb885662e0aa238aa00ca17cbcc82077f465f2ce57d0f1225590",
+  "method": "Unmodified frozen examples/minimax_h3_compare.py:compare_video_streams",
+  "scoring_wheels_sha256": {
+    "scikit_image-0.25.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "24cc986e1f4187a12aa319f777b36008764e856e5013666a4a83f8df083c2641",
+    "lazy_loader-0.4-py3-none-any.whl": "342aa8e14d543a154047afb4ba8ef17f5563baad3fc610d7b15b213b0f119efc"
+  },
+  "packages": {
+    "av": "14.0.1",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "Pillow": "12.2.0",
+    "scikit-image": "0.25.2"
+  },
+  "video_sha256": {
+    "b_pytorch_10step.mp4": "6749a014008506e613c3845bc7f12e57e57e6a8ece574cd5bb9d423d04a6d1d7",
+    "b_infini_v2_sync_10step.mp4": "c0ee1001333924e5791adc76d03b6e8dc9ac7f7eaf1c3aa591fffab25eda0d28",
+    "b_infini_v3_vae_10step.mp4": "289c611a9afb01291156f8c36be996a91163f775328aa1bc48189b0edb0fda29",
+    "b_legacy_10step.mp4": "9c331f48d43cab81319f4bc0e48971e95d877ef7db62a8595e352e4dd195f559",
+    "b_infini_v1_10step.mp4": "31155ee79332317994683e55679672d4c5507bbc44ee3713d1fa19d24eedc0d0",
+    "b_infini_v4_mha_fp32_10step.mp4": "571ff8abb40c352152429a18775761fc120922446631453af997fd7a46470e01"
+  },
+  "results": {
+    "b_pytorch_10step.mp4 vs b_legacy_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 71054202,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 202,
+      "mean_absolute_difference": 4.465016099572039,
+      "ssim_match_percent": 94.23103184276818,
+      "ssim_min_percent": 88.20718421313096,
+      "ssim_max_percent": 97.53236843009178,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_pytorch_10step.mp4 vs b_infini_v1_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 81908443,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 253,
+      "mean_absolute_difference": 77.82535048909797,
+      "ssim_match_percent": 18.01273888159814,
+      "ssim_min_percent": 14.750426086393878,
+      "ssim_max_percent": 23.281922145202437,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_legacy_10step.mp4 vs b_infini_v1_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 81908038,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 253,
+      "mean_absolute_difference": 77.79681436591109,
+      "ssim_match_percent": 18.008637147301005,
+      "ssim_min_percent": 14.818363187596312,
+      "ssim_max_percent": 23.30641939182031,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_pytorch_10step.mp4 vs b_infini_v2_sync_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 71399253,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 251,
+      "mean_absolute_difference": 4.93804168397333,
+      "ssim_match_percent": 93.0889343668729,
+      "ssim_min_percent": 82.46897221260814,
+      "ssim_max_percent": 97.37604339658687,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_legacy_10step.mp4 vs b_infini_v2_sync_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 69746643,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 230,
+      "mean_absolute_difference": 3.9917338685370307,
+      "ssim_match_percent": 95.15381527832348,
+      "ssim_min_percent": 86.79813061626278,
+      "ssim_max_percent": 98.3829881644107,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_pytorch_10step.mp4 vs b_infini_v3_vae_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 71278927,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 227,
+      "mean_absolute_difference": 5.719583539457636,
+      "ssim_match_percent": 88.72366522655467,
+      "ssim_min_percent": 61.91050842377892,
+      "ssim_max_percent": 98.11419604681043,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_legacy_10step.mp4 vs b_infini_v3_vae_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 72748036,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 233,
+      "mean_absolute_difference": 6.555952405606736,
+      "ssim_match_percent": 87.07818374388123,
+      "ssim_min_percent": 63.48123395197227,
+      "ssim_max_percent": 97.18200666362708,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_pytorch_10step.mp4 vs b_infini_v4_mha_fp32_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 72465610,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 250,
+      "mean_absolute_difference": 6.306243969405709,
+      "ssim_match_percent": 89.32661901675564,
+      "ssim_min_percent": 74.42104268035355,
+      "ssim_max_percent": 97.39678038463855,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_legacy_10step.mp4 vs b_infini_v4_mha_fp32_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 70910694,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 239,
+      "mean_absolute_difference": 5.389565477329438,
+      "ssim_match_percent": 91.38294490898869,
+      "ssim_min_percent": 79.80961522431943,
+      "ssim_max_percent": 98.35599044677849,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    }
+  }
+}

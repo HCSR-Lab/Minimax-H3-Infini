@@ -1,0 +1,24 @@
+# Generated environments, sources and outputs
+/.venv*/
+/build/
+/install/
+/runs/
+/vendor/
+/private/
+__pycache__/
+*.py[cod]
+*.so
+*.whl
+*.safetensors
+*.bin
+*.mp4
+.env
+.env.*
+
+# Local-only report and notes
+/docs/
+/*.docx
+/.~*
+
+# GitHub false positive on an unrelated upstream Flux2 test import
+/sources/diffusers/tests/pipelines/flux2/test_pipeline_flux2.py

@@ -1,0 +1,21 @@
+--- a/diagnose_sync_bridge.py
++++ b/scripts/run_infini_v2.py
+@@ -8,6 +8,9 @@
+ from pathlib import Path
+ import runpy
+ import sys
++
++if '--legacy' in sys.argv:
++    raise RuntimeError('The Infini candidate must not enable legacy mode')
+ 
+ import torch
+ import infinicore
+@@ -31,7 +34,7 @@
+ # Some callers may import the defining module instead of the package alias.
+ import infinicore.tensor
+ infinicore.tensor.from_torch = synchronized_from_torch
+-entry = Path(os.environ['H3_ENV_ROOT']) / 'src/InfiniLM/examples/minimax_h3.py'
++entry = Path(os.environ['INFINILM_SOURCE']).resolve() / 'examples/minimax_h3.py'
+ sys.argv[0] = str(entry)
+ print('CANDIDATE_SYNC_BRIDGE_ENABLED', flush=True)
+ try:

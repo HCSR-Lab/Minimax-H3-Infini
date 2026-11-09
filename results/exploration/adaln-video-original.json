@@ -1,0 +1,117 @@
+{
+  "source": "/public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/baselines_20261106/infini/src/InfiniLM/examples/minimax_h3_compare.py",
+  "source_sha256": "e143c28e4b3acb885662e0aa238aa00ca17cbcc82077f465f2ce57d0f1225590",
+  "method": "Unmodified frozen examples/minimax_h3_compare.py:compare_video_streams",
+  "scoring_wheels_sha256": {
+    "scikit_image-0.25.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "24cc986e1f4187a12aa319f777b36008764e856e5013666a4a83f8df083c2641",
+    "lazy_loader-0.4-py3-none-any.whl": "342aa8e14d543a154047afb4ba8ef17f5563baad3fc610d7b15b213b0f119efc"
+  },
+  "packages": {
+    "av": "14.0.1",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "Pillow": "12.2.0",
+    "scikit-image": "0.25.2"
+  },
+  "video_sha256": {
+    "b_pytorch_10step.mp4": "6749a014008506e613c3845bc7f12e57e57e6a8ece574cd5bb9d423d04a6d1d7",
+    "b_infini_v2_sync_10step.mp4": "c0ee1001333924e5791adc76d03b6e8dc9ac7f7eaf1c3aa591fffab25eda0d28",
+    "b_infini_v3_vae_10step.mp4": "289c611a9afb01291156f8c36be996a91163f775328aa1bc48189b0edb0fda29",
+    "b_legacy_10step.mp4": "9c331f48d43cab81319f4bc0e48971e95d877ef7db62a8595e352e4dd195f559",
+    "b_infini_v1_10step.mp4": "31155ee79332317994683e55679672d4c5507bbc44ee3713d1fa19d24eedc0d0",
+    "b_infini_v4_mha_fp32_10step.mp4": "571ff8abb40c352152429a18775761fc120922446631453af997fd7a46470e01",
+    "b_infini_v5_adaln_10step.mp4": "8e4913a1fce127f7fe0c4983ea897f825d843bcbaa8c4e46cb16822d8dd65e19"
+  },
+  "results": {
+    "b_pytorch_10step.mp4 vs b_legacy_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 71054202,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 202,
+      "mean_absolute_difference": 4.465016099572039,
+      "ssim_match_percent": 94.23103184276818,
+      "ssim_min_percent": 88.20718421313096,
+      "ssim_max_percent": 97.53236843009178,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_pytorch_10step.mp4 vs b_infini_v5_adaln_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 71845196,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 234,
+      "mean_absolute_difference": 5.586797765126413,
+      "ssim_match_percent": 89.01503949435049,
+      "ssim_min_percent": 62.38712729063902,
+      "ssim_max_percent": 97.18235378895446,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    },
+    "b_legacy_10step.mp4 vs b_infini_v5_adaln_10step.mp4": {
+      "exact": false,
+      "left_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "right_metadata": {
+        "width": 576,
+        "height": 384,
+        "declared_frames": 124,
+        "average_fps": 24.0,
+        "duration_seconds": 5.166666666666667
+      },
+      "metadata_size_match": true,
+      "decoded_length_match": true,
+      "left_frames": 124,
+      "right_frames": 124,
+      "shape_mismatches": 0,
+      "different_elements": 71146757,
+      "compared_elements": 82280448,
+      "max_absolute_difference": 232,
+      "mean_absolute_difference": 5.352273726074024,
+      "ssim_match_percent": 89.679136608629,
+      "ssim_min_percent": 64.09469295082154,
+      "ssim_max_percent": 98.15668435564952,
+      "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+    }
+  }
+}

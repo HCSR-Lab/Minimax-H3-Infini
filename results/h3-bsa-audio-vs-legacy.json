@@ -1,0 +1,24 @@
+{
+  "reference": "output/alignment_pod_10step/b_legacy_10step.mp4",
+  "candidate": "output/alignment_pod_10step/b_infini_v2_sync_10step.mp4",
+  "reference_metadata": {
+    "sample_rate": 32000,
+    "channels": 2,
+    "frames": 165888,
+    "file_sha256": "9c331f48d43cab81319f4bc0e48971e95d877ef7db62a8595e352e4dd195f559"
+  },
+  "candidate_metadata": {
+    "sample_rate": 32000,
+    "channels": 2,
+    "frames": 165888,
+    "file_sha256": "c0ee1001333924e5791adc76d03b6e8dc9ac7f7eaf1c3aa591fffab25eda0d28"
+  },
+  "method": "ffmpeg pcm_f32le, all channels, zero shift, no gain or resampling",
+  "pcm_cosine": 0.8834032038863954,
+  "threshold": 0.95,
+  "passed": false,
+  "rmse": 0.003409444580275443,
+  "mae": 0.0014073346463758139,
+  "exact": false,
+  "listening_performed": false
+}

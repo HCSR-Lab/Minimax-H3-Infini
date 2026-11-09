@@ -1,0 +1,11 @@
+{
+  "source": "offline_h3_20261030/build_sources/diffusers-fe15005a333d1270b490e4885a6ea13b66b1092a/docs/source/en/api/pipelines/minimax_h3.md",
+  "source_sha256": "d149cf0fd23c13cf4d70d9f77795ff794cfbb577d4fa8c0d741393ca131db7c7",
+  "upstream_example_sha256": "7dda4cf3b300e7aca1c03bfc3d459fd96e91c206291c713935b2215df85f4b9f",
+  "configured_example_sha256": "1b43ae946727687e9ead9c1ec54ec8d65034a925bc9cd31e4bfa535c66720cff",
+  "changes": [
+    "Local weights, contest image, prompt, output path",
+    "Explicit comparison dimensions and steps",
+    "Omit the separate text-only generation example"
+  ]
+}

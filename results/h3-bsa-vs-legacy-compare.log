@@ -1,0 +1,13 @@
+
+[task] reference_fl2va: using existing result: /home/jizhenwei/Downloads/competition/minimax-h3-submission/private/comparison-inputs/legacy.mp4
+
+[task] infinilm_fl2va: using existing result: /home/jizhenwei/Downloads/competition/minimax-h3-submission/private/comparison-inputs/h3-bsa.mp4
+
+[compare] FL2VA: decoding outputs
+
+[result] MiniMax-H3 video comparison
+
+  FL2VA
+    Size:         PASS (PyTorch 576x384, InfiniLM 576x384)
+    Length:       PASS (PyTorch 124 frames, InfiniLM 124 frames)
+    Average SSIM: 95.154%

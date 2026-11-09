@@ -1,0 +1,26 @@
+{
+  "b_infini_v1_10step.mp4": {
+    "pcm_cosine": 0.011766548909714099,
+    "rmse": 0.0053155444831466435
+  },
+  "b_infini_v2_sync_10step.mp4": {
+    "pcm_cosine": 0.8834032038863955,
+    "rmse": 0.003409444580275443
+  },
+  "b_infini_v3_vae_10step.mp4": {
+    "pcm_cosine": 0.8881081870023367,
+    "rmse": 0.002537521547553857
+  },
+  "b_infini_v4_mha_fp32_10step.mp4": {
+    "pcm_cosine": 0.7505558358810759,
+    "rmse": 0.004520663929668519
+  },
+  "b_infini_v5_adaln_10step.mp4": {
+    "pcm_cosine": 0.9498043716772565,
+    "rmse": 0.0020289445786674065
+  },
+  "b_infini_v6_oldcombo_10step.mp4": {
+    "pcm_cosine": 0.7402965804100902,
+    "rmse": 0.004301815078947539
+  }
+}

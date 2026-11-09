@@ -1,0 +1,20 @@
+{
+  "python": "3.11.9",
+  "torch": "2.9.0+das.opt1.dtk2604",
+  "hip": "6.3.26093",
+  "architecture": "gfx936",
+  "device_count": 8,
+  "memory_per_device_gib": 64,
+  "flash_attention": {
+    "version": "2.6.1+das.opt1.dtk2604.torch290",
+    "abi": "cp311",
+    "index": "https://pypi.sourcefind.cn/release/dtk/+simple/flash-attn/",
+    "wheel_sha256": "8546e46bcbfcd346757c67a0ff180ace2a49716d9724d52ee870d04b4c3b41d1",
+    "library": "flash_attn_2_cuda.cpython-311-x86_64-linux-gnu.so"
+  },
+  "limitations": [
+    "Observed server environment, not a complete dependency lock.",
+    "Vendor Torch distribution and exact toolchain acquisition instructions remain to be documented.",
+    "The freeze file omits base-image packages and is not an installation recipe."
+  ]
+}

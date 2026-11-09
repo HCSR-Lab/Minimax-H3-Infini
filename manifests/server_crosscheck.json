@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-11-07",
+  "method": "Authenticated Chrome MCP read-only AFS download",
+  "files": [
+    {
+      "name": "diagnose_sync_bridge.py",
+      "sha256": "7ba68cb292ebf4f58939477409427557000514b6bd3bfadc283bd60e914d7027"
+    },
+    {
+      "name": "build_manifest.json",
+      "sha256": "f7b08c6ea221fc38bc476ac8e78abda8c8a395909e3826e2fd0602c2340a9e33"
+    },
+    {
+      "name": "installed.freeze.txt",
+      "sha256": "31c50c13bc367fa87967baadbcebbb390abfc9a458aec3459ad306d692879e28"
+    },
+    {
+      "name": "requirements.resolved-input.txt",
+      "sha256": "31c50c13bc367fa87967baadbcebbb390abfc9a458aec3459ad306d692879e28"
+    }
+  ],
+  "v2_sync_script_matches_local": true,
+  "limitations": [
+    "Only the listed files were read. Current server native libraries and complete source trees were not hashed.",
+    "The build manifest predates the Flash layout repair; its binary hashes do not identify the final v2 runtime.",
+    "Portable launchers are new adaptations and have not been validated on target hardware."
+  ]
+}

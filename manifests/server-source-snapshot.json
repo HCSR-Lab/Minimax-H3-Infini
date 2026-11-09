@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "3554b6b0a07a49581c7aa616688cc2c138b402a73aa7efc7640961b764acd19b",
+  "files_verified": 11424,
+  "created_unix": 1794055230.974388,
+  "git": {
+    "sources/InfiniLM": "",
+    "sources/InfiniCore": "",
+    "sources/ninetoothed": ""
+  },
+  "unreadable_server_files": [
+    "/public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/baselines_20261106/infini/src/InfiniCore/src/infinicore/adaptor/flash_attn/hygon/flash_attn_hygon.cc.before_flash_layout_fix",
+    "/public/home/aclsylqidf/infinifabric-users/users/5308e449f74d4f4c9ad0d04a6e55cfb0/competition/baselines_20261106/infini/src/InfiniCore/xmake/hygon.lua.before_flash_layout_fix"
+  ],
+  "scope": "Current server source and installed Python; excludes compiled binaries, weights and build caches"
+}

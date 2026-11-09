@@ -1,0 +1,30 @@
+{
+  "b_pytorch_10step.mp4 vs b_infini_v1_10step.mp4": {
+    "exact": false,
+    "left_frames": 124,
+    "right_frames": 124,
+    "shape_mismatches": 0,
+    "different_elements": 81908443,
+    "compared_elements": 82280448,
+    "max_absolute_difference": 253,
+    "mean_absolute_difference": 77.82535048909797,
+    "ssim_match_percent": 18.01273888159814,
+    "ssim_min_percent": 14.750426086393878,
+    "ssim_max_percent": 23.281922145202437,
+    "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+  },
+  "b_legacy_10step.mp4 vs b_infini_v1_10step.mp4": {
+    "exact": false,
+    "left_frames": 124,
+    "right_frames": 124,
+    "shape_mismatches": 0,
+    "different_elements": 81908038,
+    "compared_elements": 82280448,
+    "max_absolute_difference": 253,
+    "mean_absolute_difference": 77.79681436591109,
+    "ssim_match_percent": 18.008637147301005,
+    "ssim_min_percent": 14.818363187596312,
+    "ssim_max_percent": 23.30641939182031,
+    "ssim_method": "grayscale frames scaled to at most 512 pixels per side"
+  }
+}

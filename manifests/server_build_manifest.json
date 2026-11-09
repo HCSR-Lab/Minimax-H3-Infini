@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "InfiniCore": {
+      "expected_commit": "f32e2fbb2a9b2ca912b5711f4f3836c403196a74",
+      "archive_marker": "InfiniCore-minimax-h3-f32e2fb.tar.gz"
+    },
+    "InfiniLM": {
+      "expected_commit": "65deb91f840ebaef752d028fad2f3217ce0950f4",
+      "archive_marker": "InfiniLM-minimax_h3-65deb91.tar.gz"
+    },
+    "ninetoothed": {
+      "expected_commit": "bf8d7c42f86cf5feafe4a3ad443f1df151016886",
+      "archive_marker": "ninetoothed-master-bf8d7c4.tar.gz"
+    }
+  },
+  "build_command": "xmake f -y -cv -m release --hygon-dcu=y --hygon-arch=gfx936 --cuda=/opt/dtk/cuda/cuda --ccl=y --aten=y; xmake build/install; xmake build/install _infinicore; xmake f -y -cv -m release; xmake build/install _infinilm",
+  "native_sha256": {
+    "src/InfiniLM/python/infinilm/lib/_infinilm.cpython-311-x86_64-linux-gnu.so": "c122cd4f5c0a05a5ca79d2074385d59ddd319ca5689d867764244ec3731efd9f",
+    "src/InfiniCore/python/infinicore/lib/libinfinicore_cpp_api.so": "71de21e5989b80c93326ca63046cd521f193b69fb5151121cebdca8600c06166",
+    "src/InfiniCore/python/infinicore/lib/libinfiniop.so": "bf4e96ef75497f41c939d422ca124dab2122f5cc28c3a357987bc4711c6c1fdc",
+    "src/InfiniCore/python/infinicore/lib/libinfinirt.so": "1993bdeba63c137758fc2cb9d8ae772d6fdeb94999de260373ab52e1f4c7a467",
+    "src/InfiniCore/python/infinicore/lib/_infinicore.cpython-311-x86_64-linux-gnu.so": "489003b71db0f5c9d1506dc7476cdd4b9c0ec4be99cdbb9b58b8ae26153afaa2",
+    "src/InfiniCore/python/infinicore/lib/libinfiniccl.so": "81183241721bbacca06afa8a269ec3c2bbe80a09f74527a6690d53d4a35d2bf3"
+  }
+}
